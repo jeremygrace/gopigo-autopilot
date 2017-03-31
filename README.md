@@ -14,5 +14,5 @@
 <br>
 
 <p align="center">
-  <img src="img/opencv.jpg"/>
+  <img src="img/opencv.png"/>
 </p>
