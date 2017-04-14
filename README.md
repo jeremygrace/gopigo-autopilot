@@ -1,5 +1,8 @@
 # self-driving-car
 
+<p align="center">
+  <img src="img/GoPiGo.jpg"/>
+</p>
 
 <p align="center">
   <img src="img/keras-tensorflow-logo.jpg"/>
