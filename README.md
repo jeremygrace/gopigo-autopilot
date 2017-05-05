@@ -3,7 +3,6 @@
 <p align="center">
   <img src="img/GoPiGo.jpg"/>
 </p>
----
 
 
 ### Hardware
