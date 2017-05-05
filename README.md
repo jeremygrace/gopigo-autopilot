@@ -6,6 +6,7 @@
 
 
 <br>
+
 #### Hardware
 - [ macOS Sierra ](https://www.apple.com/macos/sierra/)
 - [ Dexters Industries GoPiGo ](https://www.dexterindustries.com/GoPiGo/)
@@ -26,4 +27,3 @@
 - Raspberry Pi:
     - Picamera
  <br>
- 
