@@ -4,7 +4,7 @@
   <img src="img/GoPiGo.jpg"/>
 </p>
 
-<div style='float:left; width:30%; margin-left:10px'>
+<div style='float:left; width:30%'>
 <h4>Hardware</h4>
 <ul>
     <li><a href="https://www.apple.com/macos/sierra/">macOS Sierra</a></li>
@@ -23,16 +23,16 @@
 <ul>
   <li>macOS:
   <ul>
-    <li>[Anaconda](https://www.continuum.io/anaconda-overview) - Python 3.5 env</li>
+    <li><a href="https://www.continuum.io/anaconda-overview">Anaconda 4.3</a> : Python 3.5 env</li>
     <li>Numpy 1.12</li>
     <li>TensorFlow 1.0 + Keras 2.0</li>
-    <li>[OpenCV ](http://opencv.org/) 3.1</li>
-    <li>[Pygame](https://www.pygame.org/docs/) 1.9</li>
-    <li>[PySerial](https://pypi.python.org/pypi/pyserial) 3.3</li>
+    <li><a href="http://opencv.org/">OpenCV</a> 3.1</li>
+    <li><a href="https://www.pygame.org/docs/)">Pygame</a> 1.9</li>
+    <li><a href="https://pypi.python.org/pypi/pyserial">PySerial</a> 3.3</li>
   </ul>
   <li>Raspberry Pi:
     <ul>
-    <li>[Picamera](http://picamera.readthedocs.io/en/release-1.13/)</li>
+    <li><a href="http://picamera.readthedocs.io/en/release-1.13/">Picamera</a></li>
   </ul>
  </ul>
 
