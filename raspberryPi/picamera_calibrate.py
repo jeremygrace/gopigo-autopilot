@@ -25,9 +25,9 @@ object_points = []  # 3d point in real world space
 img_points = []  # 2d points in image plane.
 h, w = 0, 0
 
-chessbd_imgs = glob2.glob('/home/pi/chessboard/*.jpg')
+chess_imgs = glob2.glob('/home/pi/chessboard/*.jpg')
 
-for fname in chessbd_imgs:
+for fname in chess_imgs:
     img = cv2.imread(fname)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     h, w = gray.shape[:2]
