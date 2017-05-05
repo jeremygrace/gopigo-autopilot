@@ -23,7 +23,6 @@ obj_pt[:, :2] = np.mgrid[0:9, 0:6].T.reshape(-1, 2)
 # Arrays to store object points and image points from all the images.
 object_points = []  # 3d point in real world space
 img_points = []  # 2d points in image plane.
-h, w = 0, 0
 
 checkbd_imgs = glob2.glob('/checkboard/*.jpg')
 
@@ -47,7 +46,7 @@ for fname in checkbd_imgs:
 # calibration
 ret, mtx, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(object_points,
                                                          img_points,
-                                                         (w, h),
+                                                         gray.shape[::-1],
                                                          None, None)
 
 print("Camera Matrix:\n", mtx)
