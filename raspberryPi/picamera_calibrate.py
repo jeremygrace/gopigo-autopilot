@@ -25,7 +25,7 @@ object_points = []  # 3d point in real world space
 img_points = []  # 2d points in image plane.
 h, w = 0, 0
 
-chessbd_imgs = glob2.glob('chessboard/*.jpg')
+chessbd_imgs = glob2.glob('/home/pi/chessboard/*.jpg')
 
 for fname in chessbd_imgs:
     img = cv2.imread(fname)
