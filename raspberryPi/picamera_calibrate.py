@@ -1,4 +1,3 @@
-#!/usr/local/bin/python3.5
 """
 References:
 -- OpenCV-Python Tutorials: Camera Calibration and 3D Reconstruction
