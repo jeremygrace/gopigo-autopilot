@@ -18,12 +18,12 @@
 
 - macOS:
     - [Anaconda](https://www.continuum.io/anaconda-overview) - Python 3.5 env
-    - Numpy
-    - TensorFlow + Keras
-    - OpenCV
-    - Pygame
-    - PiSerial
+    - Numpy 1.12
+    - TensorFlow 1.0 + Keras 2.0
+    - [OpenCV ](http://opencv.org/) 3.1
+    - [Pygame](https://www.pygame.org/docs/) 1.9
+    - [PySerial](https://pypi.python.org/pypi/pyserial) 3.3
 
 - Raspberry Pi:
-    - Picamera
+    - [Picamera](http://picamera.readthedocs.io/en/release-1.13/)
  <br>
