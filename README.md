@@ -4,6 +4,7 @@
   <img src="img/GoPiGo.jpg"/>
 </p>
 
+[comment]: <> (Needs a companion CSS file to format Two cols)
 <div style='float:left; width:30%'>
 <h4>Hardware</h4>
 <ul>
