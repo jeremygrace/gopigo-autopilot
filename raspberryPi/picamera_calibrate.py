@@ -23,13 +23,14 @@ obj_pt[:, :2] = np.mgrid[0:9, 0:6].T.reshape(-1, 2)
 # Arrays to store object points and image points from all the images.
 object_points = []  # 3d point in real world space
 img_points = []  # 2d points in image plane.
+h, w = 0, 0
 
 checkbd_imgs = glob2.glob('/checkboard/*.jpg')
 
 for fname in checkbd_imgs:
     img = cv2.imread(fname)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
+    h, w = gray.shape[:2]
     # Find the chess board corners
     ret, corners = cv2.findChessboardCorners(gray, (9, 6), None)
 
@@ -40,13 +41,13 @@ for fname in checkbd_imgs:
         img_points.append(corners)
 
         # Draw and display the corners
-        cv2.drawChessboardCorners(img, (7, 6), corners, ret)
+        cv2.drawChessboardCorners(img, (9, 6), corners, ret)
         cv2.imshow('image', img)
         cv2.waitKey(500)
 # calibration
 ret, mtx, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(object_points,
                                                          img_points,
-                                                         gray.shape[::-1],
+                                                         (w, h),
                                                          None, None)
 
 print("Camera Matrix:\n", mtx)
