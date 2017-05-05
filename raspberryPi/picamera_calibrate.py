@@ -41,8 +41,8 @@ for fname in checkbd_imgs:
         img_points.append(corners)
 
         # Draw and display the corners
-        image = cv2.drawChessboardCorners(img, (7, 6), corners, ret)
-        cv2.imshow('image', image)
+        cv2.drawChessboardCorners(img, (7, 6), corners, ret)
+        cv2.imshow('image', img)
         cv2.waitKey(500)
 # calibration
 ret, mtx, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(object_points,
