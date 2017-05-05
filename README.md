@@ -1,23 +1,29 @@
 # self-driving-car
 
-### <center>---- Work in progress ----</center>
-
 <p align="center">
   <img src="img/GoPiGo.jpg"/>
 </p>
 
-<p align="center">
-  <img src="img/keras-tensorflow-logo.jpg"/>
-</p>
 
 <br>
+#### Hardware
+- [ macOS Sierra ](https://www.apple.com/macos/sierra/)
+- [ Dexters Industries GoPiGo ](https://www.dexterindustries.com/GoPiGo/)
+    - Raspberry Pi 3
+    - Picamera
+    - Ultrasonic sensor
 
-<p align="center">
-  <img src="img/raspberry-pi-logo.png"/>
-</p>
+#### Software Dependencies
 
-<br>
+- macOS:
+    - [Anaconda](https://www.continuum.io/anaconda-overview) - Python 3.5 env
+    - Numpy
+    - TensorFlow + Keras
+    - OpenCV
+    - Pygame
+    - PiSerial
 
-<p align="center">
-  <img src="img/opencv.png"/>
-</p>
+- Raspberry Pi:
+    - Picamera
+ <br>
+ 
