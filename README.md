@@ -7,8 +7,8 @@
 <div style='float:left; width:30%; margin-left:10px'>
 <h4>Hardware</h4>
 <ul>
-    <li>[ macOS Sierra ](https://www.apple.com/macos/sierra/)</li>
-    <li>[ Dexters Industries GoPiGo ](https://www.dexterindustries.com/GoPiGo/)
+    <li><a href="https://www.apple.com/macos/sierra/">macOS Sierra</a></li>
+    <li><a href="https://www.dexterindustries.com/GoPiGo/">Dexters Industries GoPiGo</a></li>
       <ul>
           <li>Raspberry Pi 3</li>
           <li>Picamera</li>
