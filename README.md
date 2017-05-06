@@ -1,4 +1,4 @@
-# self-driving-car
+<h1>self-driving-car</h1>
 
 <p align="center">
   <img src="img/GoPiGo.jpg"/>
