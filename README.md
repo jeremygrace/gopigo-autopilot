@@ -32,7 +32,8 @@
     <li><a href="https://pypi.python.org/pypi/pyserial">PySerial</a> 3.3</li>
   </ul>
   <li>Raspberry Pi:
-    <ul>
+  <ul>
+    <li>GoPiGo Python modules</li>
     <li><a href="http://picamera.readthedocs.io/en/release-1.13/">Picamera</a></li>
     <li>VIM editor :: for quick writing/refactoring</li>
   </ul>
