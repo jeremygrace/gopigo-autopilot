@@ -34,6 +34,7 @@
   <li>Raspberry Pi:
     <ul>
     <li><a href="http://picamera.readthedocs.io/en/release-1.13/">Picamera</a></li>
+    <li>VIM editor :: for quick writing/refactoring</li>
   </ul>
  </ul>
 
