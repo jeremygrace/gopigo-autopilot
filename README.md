@@ -8,8 +8,8 @@
 <div style='float:left; width:30%'>
 <h4>Hardware</h4>
 <ul>
-    <li><a href="https://aws.amazon.com/ec2/instance-types/p2/">AWS EC2 P2 instance [ 1 NVIDIA K80 GPU ]</li>
-    <li><a href="https://www.apple.com/macos/sierra/">macOS Sierra</a></li>
+    <li><a href="https://aws.amazon.com/ec2/instance-types/p2/">AWS EC2 P2 instance</a> [ 1 NVIDIA K80 GPU ]</li>
+    <li><a href="https://www.apple.com/macos/sierra/">macOS Sierra</a> [ 1 Intel Iris Graphics 1600 GPU ]</li>
     <li><a href="https://www.dexterindustries.com/GoPiGo/">Dexters Industries GoPiGo</a></li>
       <ul>
           <li>Raspberry Pi 3</li>
