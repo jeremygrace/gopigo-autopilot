@@ -14,7 +14,6 @@ import pygame
 import serial
 import socket
 import numpy as np
-from pygame.locals import *
 
 
 class CollectData(object):
@@ -29,8 +28,7 @@ class CollectData(object):
         self.connection = self.server_socket.accept()[0].makefile('rb')
 
         # Connect to a serial port
-        self.ser = serial.Serial('/dev/tty.Bluetooth-Incoming-Port',
-                                 115200, timeout=1)
+        self.ser = serial.Serial('/dev/tty.Bluetooth-Incoming-Port', 115200, timeout=1)
         self.send_inst = True
 
         # Create labels
@@ -68,7 +66,7 @@ class CollectData(object):
                     # Parse/Select lower half of the image
                     roi = img[120:240, :]
                     # Save streamed images
-                    cv2.imwrite('training_img/frame{:>05}.jpg'.format(frame), img)
+                    cv2.imwrite('~/self-driving-car/macOS/training_img/frame{:>05}.jpg'.format(frame), img)
                     cv2.imshow('roi_image', roi)
                     cv2.imshow('img', img)
 
@@ -82,41 +80,41 @@ class CollectData(object):
                         if event.type == KEYDOWN:
                             key_input = pygame.key.get_pressed()
                             # simple orders
-                        elif key_input[pygame.K_w]:
-                            print "Forward"
-                            saved_frame += 1
-                            image_array = np.vstack((image_array, tmp_array))
-                            label_array = np.vstack((label_array, self.k[2]))
-                            self.ser.write(chr(1))
-                        elif key_input[pygame.K_s]:
-                            print "Reverse"
-                            saved_frame += 1
-                            image_array = np.vstack((image_array, tmp_array))
-                            label_array = np.vstack((label_array, self.k[3]))
-                            self.ser.write(chr(2))
-                        elif key_input[pygame.K_d]:
-                            print "Right"
-                            image_array = np.vstack((image_array, tmp_array))
-                            label_array = np.vstack((label_array, self.k[1]))
-                            saved_frame += 1
-                            self.ser.write(chr(3))
-                        elif key_input[pygame.K_a]:
-                            print "Left"
-                            image_array = np.vstack((image_array, tmp_array))
-                            label_array = np.vstack((label_array, self.k[0]))
-                            saved_frame += 1
-                            self.ser.write(chr(4))
-                        elif key_input[pygame.K_x]:
-                            print "Stop"
-                            image_array = np.vstack((image_array, tmp_array))
-                            label_array = np.vstack((label_array, self.k[4]))
-                            saved_frame += 1
-                            self.ser.write(chr(5))
-                        elif key_input[pygame.K_z]:
-                            print 'Exit'
-                            self.send_inst = False
-                            self.ser.write(chr(0))
-                            break
+                            if key_input[pygame.K_w]:
+                                print "Forward"
+                                saved_frame += 1
+                                image_array = np.vstack((image_array, tmp_array))
+                                label_array = np.vstack((label_array, self.k[2]))
+                                self.ser.write(chr(1))
+                            elif key_input[pygame.K_s]:
+                                print "Reverse"
+                                saved_frame += 1
+                                image_array = np.vstack((image_array, tmp_array))
+                                label_array = np.vstack((label_array, self.k[3]))
+                                self.ser.write(chr(2))
+                            elif key_input[pygame.K_d]:
+                                print "Right"
+                                image_array = np.vstack((image_array, tmp_array))
+                                label_array = np.vstack((label_array, self.k[1]))
+                                saved_frame += 1
+                                self.ser.write(chr(3))
+                            elif key_input[pygame.K_a]:
+                                print "Left"
+                                image_array = np.vstack((image_array, tmp_array))
+                                label_array = np.vstack((label_array, self.k[0]))
+                                saved_frame += 1
+                                self.ser.write(chr(4))
+                            elif key_input[pygame.K_x]:
+                                print "Stop"
+                                image_array = np.vstack((image_array, tmp_array))
+                                label_array = np.vstack((label_array, self.k[4]))
+                                saved_frame += 1
+                                self.ser.write(chr(5))
+                            elif key_input[pygame.K_z]:
+                                print 'Exit'
+                                self.send_inst = False
+                                self.ser.write(chr(0))
+                                break
                         elif event.type == pygame.KEYUP:
                             self.ser.write(chr(0))
 
@@ -125,7 +123,7 @@ class CollectData(object):
             train_labels = label_array[1:, :]
 
             # Save training data as a numpy file (.npz format)
-            np.savez('training_data_temp/test08.npz', train=train, train_labels=train_labels)
+            np.savez('~/self-driving-car/macOS/training_data_temp/test08.npz', train=train, train_labels=train_labels)
             e2 = cv2.getTickCount()
 
             # Calculate streaming duration
