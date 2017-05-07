@@ -26,11 +26,11 @@ try:
         stream = io.BytesIO()
 
         # Send jpg formatted video stream
-        for _ in cam.capture_continuous(stream, 'jpg', use_video_port=True):
+        for _ in cam.capture_continuous(stream, 'jpeg', use_video_port=True):
             connection.write(struct.pack('<L', stream.tell()))
             connection.flush()
             stream.seek(0)
-            connection.write(stream.read())
+            connection.write((stream.read()))
             if time.time() - start > 600:
                 break
             stream.seek(0)
