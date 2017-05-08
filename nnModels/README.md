@@ -4,9 +4,9 @@
 
 <br>
 
-<p align="center">
+<!-- <p align="center">
   <img src="/img/vgg16.png"/>
-</p>
+</p> -->
 
 
 <br>

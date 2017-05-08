@@ -14,10 +14,10 @@ import numpy as np
 
 
 # Zheng Wang's Haar Cascade Classifier
-# stop_signs = cv2.CascadeClassifier('stop_signs_ZW.xml')
+stop_signs = cv2.CascadeClassifier('stop_signs_ZW.xml')
 
 # My trained Haar Cascade Classifier
-stop_signs = cv2.CascadeClassifier('stop_signs_JG.xml')
+# stop_signs = cv2.CascadeClassifier('stop_signs_JG.xml')
 
 # Grab and initialize macOS camera
 cap = cv2.VideoCapture(0)
@@ -39,7 +39,7 @@ while True:
         roi_color = img[y:y+h, x:x+w]
     # Display img in window utilize python underhood
     cv2.imshow('img', img)
-    wKey = cv2.waitKey(30)
+    wKey = cv2.waitKey(30) & 0xff
     if wKey == 27:
         break
 
