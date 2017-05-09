@@ -43,5 +43,6 @@ while True:
     if wKey == 27:
         break
 
+# Perform cleanup after rendering
 cap.release()
 cv2.destroyAllWindows()

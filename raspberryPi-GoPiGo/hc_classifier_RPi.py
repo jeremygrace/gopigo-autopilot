@@ -52,7 +52,7 @@ while True:
     # clear the stream in preparation for the next frame
     rawCapture.truncate(0)
     # if the `q` key was pressed, break from the loop
-    if wKey == ord('q'):
+    if wKey == ord("q"):
         break
-
+# Perform cleanup after rendering
 cv2.destroyAllWindows()
