@@ -1,5 +1,4 @@
 '''
-Author: Jeremy Grace
 Reference:
 http://docs.opencv.org/3.1.0/dc/d2e/
 tutorial_py_image_display.html
@@ -39,7 +38,7 @@ while True:
         roi_color = img[y:y+h, x:x+w]
     # Display img in window utilize python underhood
     cv2.imshow('img', img)
-    wKey = cv2.waitKey(30) & 0xff
+    wKey = cv2.waitKey(30)
     if wKey == 27:
         break
 
