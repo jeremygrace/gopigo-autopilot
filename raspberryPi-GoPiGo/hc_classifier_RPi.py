@@ -18,9 +18,9 @@ import numpy as np
 
 # initialize the camera and grab a reference to the raw camera capture
 camera = PiCamera()
-camera.resolution = (640, 480)
+camera.resolution = (320, 240)
 camera.framerate = 34
-rawCapture = PiRGBArray(camera, size=(640, 480))
+rawCapture = PiRGBArray(camera, size=(320, 240))
 # Zheng Wang's Haar Cascade Classifier
 stop_signs = cv2.CascadeClassifier('stop_signs_ZW.xml')
 # My trained Haar Cascade Classifier
@@ -48,7 +48,7 @@ while True:
             roi_color = image[y:y+h, x:x+w]
         # Display Frame in window utilize python underhood
     cv2.imshow("Frame", image)
-    wKey = cv2.waitKey(30) & 0xFF
+    wKey = cv2.waitKey(30)
     # clear the stream in preparation for the next frame
     rawCapture.truncate(0)
     # if the `q` key was pressed, break from the loop

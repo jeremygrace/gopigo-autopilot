@@ -27,10 +27,14 @@ def retrieve_raw_images():
             print(str(e))
 
 
-def create_neg_txtfile():
-    for file_type in ['negative']:
+def create_descript_files():
+    for file_type in ['positive', 'negative']:
         for img in os.listdir(file_type):
-            if file_type == 'negative':
+            if file_type == 'positive':
+                line = file_type+'/'+img+' 1 0 0 50 50\n'
+                with open('info.dat', 'a') as f:
+                    f.write(line)
+            elif file_type == 'negative':
                 line = file_type+'/'+img+'\n'
                 with open('bg.txt', 'a') as f:
                     f.write(line)
@@ -38,4 +42,4 @@ def create_neg_txtfile():
 
 if __name__ == "__main__":
     retrieve_raw_images()
-    create_neg_txtfile()
+    create_descript_files()
