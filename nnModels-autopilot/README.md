@@ -15,8 +15,7 @@
 
 <p align="center">
   <img src="/img/autopilot-demo.gif"/>
-
-
+  <br>
   <sub>
   <b> Figure 1: </b> Demonstration of autopilot neural network in action (Roscoe, 2017)</sub>
 </p>
@@ -26,8 +25,7 @@
 
 <p align="center">
   <img src="/img/vgg16-viz.png"/>
-
-
+  <br>
   <sub>
   <b> Figure 2: </b> Neural Network structure - Illustration of VGG16 net layers (Frossard, 2016)</sub>
 </p>
