@@ -14,7 +14,7 @@
 
 
 <p align="center">
-  <img src="https://wroscoe.github.io/images/lane_following.gif"/>
+  <img src="/img/autopilot-demo.gif"/>
 
 
   <sub>
