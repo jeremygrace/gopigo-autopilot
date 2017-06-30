@@ -21,7 +21,7 @@
 </p>
 
 
-<br>
+<br><br>
 
 <p align="center">
   <img src="/img/vgg16-viz.png"/>
