@@ -10,7 +10,8 @@
 <br>
 
 
-### Object Detection -- _Stop sign classifier_
+## Object Detection  
+### Stop sign classifier
 [  **OpenCV** Haar Cascade classifier via Picamera  ]
 
 * GoPiGo can accurately recognize a `STOP` sign from various angles and distances.
@@ -23,7 +24,7 @@
 
 <br>
 
-#### Interesting observation
+#### _Interesting observation_
 
 * GoPiGo tries to classify the `DO NOT ENTER` and `WRONG WAY` as a `STOP` sign.
 
