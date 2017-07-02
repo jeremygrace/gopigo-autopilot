@@ -3,6 +3,7 @@
 
 <p align="center">
   <img src="/img/raspberry-pi-logo.png" height="150"/>
+  <img src="/img/plus.png" height="70">
   <img src="/img/opencv-logo.png" height="150">
 </p>
 
